@@ -90,7 +90,7 @@ Example response
 
 The json response will always return a `data` property which is an array of the matching event objects and a `meta` property which is an object with information on the reqest `pagination`.
 
-The following properties are available for every api request.
+The following properties are available for every api request via the `meta.pagination` attribute:
 
 <table class="table" width="100%">
 <thead>
