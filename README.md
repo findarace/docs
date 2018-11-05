@@ -60,7 +60,7 @@ This endpoint also accepts the following parameters (GET or POST):
 
 Example response
 
-``` json
+``` javascript
 {
   "meta": [
     {
@@ -254,7 +254,7 @@ The following properties are available for every api request.
 
 ## Full example response
 
-```
+``` javascript
 {
   "data": Array[1][
     {
