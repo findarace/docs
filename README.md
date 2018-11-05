@@ -4,8 +4,6 @@
 
 Our beta event API allows you to access a json feed of our event data.
 
-Currently the following endpoint is setup for swimming events:
-
 ## The Events Endpoint
 
 Request all event types:
