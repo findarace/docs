@@ -1,23 +1,27 @@
 <p align="left"><a href="https://findarace.com" target="_blank"><img width="100" height="100" src="https://avatars1.githubusercontent.com/u/44780079?s=200&amp;v=4" alt="Linkit"></a></p>
 
-# API (BETA)
+# API (Beta)
 
 Our beta event API allows you to access a json feed of our event data.
 
-## The Events Endpoint
+## Events
 
 Request all event types:
 ```
 https://findarace.com/api/events
 ```
 
-Or restrict by one or more types (supply multiple types as a comma seperated list):
-```
+Or restrict by one or more types:
 https://findarace.com/api/events/running
 https://findarace.com/api/events/swimming,swimrun
-https://findarace.com/api/events/road-cycling,mountain-biking
+
 ```
 Current event types include `running` `obstacle-mud-running` `endurance-running` `road-cycling` `mountain-biking` `triathon` `duathlon` `aquathlon` `multisport` `swimming` `swimrun` `adventure-race` `childrens` 
+
+Supply multiple types as a comma seperated list:
+```
+https://findarace.com/api/events/road-cycling,mountain-biking
+```
 
 Request a specific event by ID:
 ```
