@@ -1,12 +1,14 @@
 <p align="left"><a href="https://findarace.com" target="_blank"><img width="100" height="100" src="https://avatars1.githubusercontent.com/u/44780079?s=200&amp;v=4" alt="Linkit"></a></p>
 
-# API (Beta)
+# Event API (Beta)
 
-Our beta event API allows you to access a json feed of our event data.
+Our Event API allows you to access a json feed of our event data.
 
-## Access
+## API Access
 
 Our api is currently in private beta, to request access please do get in touch at [hello@findarace.com](mailto:hello@findarace.com).
+
+# Usage
 
 ## Events
 
