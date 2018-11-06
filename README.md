@@ -6,7 +6,7 @@ Our Event API allows you to access a json feed of our event data.
 
 ## API Access
 
-Our api is currently in private beta, to request access please do get in touch at [hello@findarace.com](mailto:hello@findarace.com).
+Our API is currently in private beta, to request access please do get in touch at [hello@findarace.com](mailto:hello@findarace.com).
 
 # Usage
 
@@ -68,7 +68,7 @@ This endpoint accepts the following parameters (GET or POST):
  </tbody>
 </table>
 
-Example response
+Example response:
 
 ``` javascript
 {
@@ -100,7 +100,7 @@ Example response
 
 The json response will always return a `data` property which is an array of the matching event objects and a `meta` property which is an object with information on the request `pagination`.
 
-The following properties are available for every api request and the `pagination` object contains the following properties:
+The following properties are available for every API request and the `pagination` object contains the following properties:
 
 <table class="table" width="100%">
 <thead>
