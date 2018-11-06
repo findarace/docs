@@ -47,7 +47,10 @@ This endpoint accepts the following parameters (GET or POST):
     <td><code>50</code></td>
     <td>
       Quantity to return on each page, results are paginated by default<br>
-      <code>https://findarace.com/api/events/running?qty=20</code><br>
+      
+      ```
+      https://findarace.com/api/events?qty=20
+      ```
     </td>
   </tr>
   <tr>
@@ -56,7 +59,10 @@ This endpoint accepts the following parameters (GET or POST):
     <td>today</td>
     <td>
       Date to start returning results from<br>
-      <code>https://findarace.com/api/events/running?formDate=2018-01-01</code><br>
+      
+      ```
+      https://findarace.com/api/events?formDate=2018-01-01
+      ```
     </td>
   </tr>
  </tbody>
