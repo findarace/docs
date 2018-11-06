@@ -6,28 +6,30 @@ Our beta event API allows you to access a json feed of our event data.
 
 ## Events
 
-Request all event types:
-```https://findarace.com/api/events```
+Request all events:
+```
+https://findarace.com/api/events
+```
 
-Or restrict by one or more types:
+Or restrict by one or more event types:
 ```
 https://findarace.com/api/events/running
 https://findarace.com/api/events/swimming,swimrun
 ```
-Current event types include `running` `obstacle-mud-running` `endurance-running` `road-cycling` `mountain-biking` `triathon` `duathlon` `aquathlon` `multisport` `swimming` `swimrun` `adventure-race` `childrens` 
 
 Supply multiple types as a comma seperated list:
 ```
-https://findarace.com/api/events/road-cycling,mountain-biking
+https://findarace.com/api/events/road-cycling,mountain-biking,swimming
 ```
+
+Current event types include `running` `obstacle-mud-running` `endurance-running` `road-cycling` `mountain-biking` `triathon` `duathlon` `aquathlon` `multisport` `swimming` `swimrun` `adventure-race` `childrens` 
 
 Request a specific event by ID:
 ```
 https://findarace.com/api/events/9999
 ```
 
-
-This endpoint also accepts the following parameters (GET or POST):
+This endpoint accepts the following parameters (GET or POST):
 
 <table class="table" width="100%">
 <thead>
@@ -64,7 +66,7 @@ Example response
 
 ``` javascript
 {
-  "meta": [
+  "data": [
     {
       "title": "Event Title",
       ...
@@ -132,8 +134,6 @@ The following properties are available for every api request via the `meta.pagin
 </table>
 
 ## Event Object
-
-`https://findarace.com/api/event/44814`
 
 <table class="table" width="100%">
 <thead>
@@ -239,17 +239,19 @@ The following properties are available for every api request via the `meta.pagin
     <td>
       Event orgainser info or false
       <code>
+      ```
       {
         "name": "Organiser Name",
         "url": "https://findarace.com/organiser"
       }
+      ```
       </code>
     </td>
   </tr>
   <tr>
     <td><code>tags</code></td>
     <td>Array</td>
-    <td>Desctiption</td>
+    <td>Array of event tag strings</td>
   </tr>
  </tbody>
 </table>
