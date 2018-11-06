@@ -47,7 +47,7 @@ This endpoint accepts the following parameters (GET or POST):
     <td><code>50</code></td>
     <td>
       Quantity to return on each page, results are paginated by default<br>
-      `https://findarace.com/api/events?qty=20`
+      <pre>https://findarace.com/api/events?qty=20</pre>
     </td>
   </tr>
   <tr>
@@ -56,10 +56,7 @@ This endpoint accepts the following parameters (GET or POST):
     <td>today</td>
     <td>
       Date to start returning results from<br>
-      
-      ```
-      https://findarace.com/api/events?formDate=2018-01-01
-      ```
+      <pre>https://findarace.com/api/events?formDate=2018-01-01</pre>
     </td>
   </tr>
  </tbody>
@@ -160,7 +157,10 @@ The following properties are available for every api request via the `meta.pagin
   <tr>
     <td><code>date</code></td>
     <td>String</td>
-    <td>Event date <code>ISO 8601</code></td>
+    <td>
+       Event date (ISO 8601)</br>
+      <pre>2019-06-22T00:00:00+01:00</pre>
+    </td>
   </tr>
   <tr>
     <td><code>url</code></td>
@@ -177,12 +177,12 @@ The following properties are available for every api request via the `meta.pagin
     <td>Object</td>
     <td>
       Website and registration urls
-      <code>
+      <pre>
       {
         "website": "https://findarace.com",
         "regestration": "https://findarace.com/register"
       }
-      </code>
+      </pre>
     </td>
   </tr>
   <tr>
@@ -190,13 +190,13 @@ The following properties are available for every api request via the `meta.pagin
     <td>Object</td>
     <td>
       Location information
-      <code>
+      <pre>
       {
         "text": "Winchester UK",
         "latitude": "54.55666",
         "longitude": "-1.6556556",
         "address": "100 High Street, Winchester, Hampshire SO23 9AH",
-        "tags": Array[10][
+        "tags": [
           "100",
           "High Street",
           "Winchester",
@@ -205,10 +205,10 @@ The following properties are available for every api request via the `meta.pagin
           "England",
           "United Kingdom",
           "GB",
-          "SO23",
+          "SO23"
         ]
       }
-      </code>
+      </pre>
     </td>  
   </tr>
   <tr>
@@ -241,14 +241,12 @@ The following properties are available for every api request via the `meta.pagin
     <td>Object / Boolean</td>
     <td>
       Event orgainser info or false
-      <code>
-      ```
+      <pre>
       {
         "name": "Organiser Name",
         "url": "https://findarace.com/organiser"
       }
-      ```
-      </code>
+      </pre>
     </td>
   </tr>
   <tr>
@@ -263,44 +261,45 @@ The following properties are available for every api request via the `meta.pagin
 
 ``` javascript
 {
-  "data": Array[1][
+  "data": [
     {
-      "title": "Worthing Beach Race",
+      "title": "A Beach Race",
       "shortTitle": "",
       "date": "2019-06-22T00:00:00+01:00",
-      "url": "https://findarace.com/events/worthing-beach-race",
-      "jsonUrl": "https://findarace.com/api/event/170260",
+      "url": "https://findarace.com/events/a-beach-race",
+      "jsonUrl": "https://findarace.com/api/event/23423",
       "links": {
-        "website": "https://gladiator-races.com/events/2019-worthing-beach/",
-        "regestration": "https://endurancecui.active.com/event-reg/select-race?e=55328253"
+        "website": "https://eventwebsite.com/events/name",
+        "regestration": "https://abookingsite.com/event/5454545"
       },
       "location": {
-        "text": "Worthing Beach, West Sussex",
-        "latitude": "50.80901850",
-        "longitude": "-0.37108500",
-        "address": "Worthing Beach, Marine Parade, Worthing, West Sussex, UK",
-        "tags": Array[9][
-          "41",
-          "Marine Parade",
-          "Worthing",
-          "West Sussex",
+        "text": "Winchester UK",
+        "latitude": "54.55666",
+        "longitude": "-1.6556556",
+        "address": "100 High Street, Winchester, Hampshire SO23 9AH",
+        "tags": [
+          "100",
+          "High Street",
+          "Winchester",
+          "Hampshire",
+          "SO23 9AH",
           "England",
           "United Kingdom",
           "GB",
-          "BN11 3PP",
-          ""
+          "SO23"
         ]
       },
-      "distances": Array[1][
+      "distances": [
         "10 km"
       ],
-      "images": Array[1][
-        "https://s3-eu-west-1.amazonaws.com/assets.findarace.com/Users/170256/Events/Worthing-Beach-Register-Now_180907_210920.png"
+      "images": [
+        "https://imageurl.com/image1.png",
+        "https://imageurl.com/image2.png"
       ],
-      "sports": Array[1][
+      "sports": [
         "obstacle-mud-running"
       ],
-      "categories": Array[4][
+      "categories": [
         "10km",
         "6km-to-10km",
         "6-to-10-miles",
@@ -311,9 +310,7 @@ The following properties are available for every api request via the `meta.pagin
         "name": "Gladiator Races",
         "url": "https://findarace.com/https-gladiator-races-com-"
       },
-      "tags": Array[0][
-        
-      ]
+      "tags": []
     }
   ],
   "meta": {
@@ -323,9 +320,7 @@ The following properties are available for every api request via the `meta.pagin
       "per_page": 100,
       "current_page": 1,
       "total_pages": 1,
-      "links": Array[0][
-        
-      ]
+      "links": []
     }
   }
 }
