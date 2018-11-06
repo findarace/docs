@@ -47,10 +47,7 @@ This endpoint accepts the following parameters (GET or POST):
     <td><code>50</code></td>
     <td>
       Quantity to return on each page, results are paginated by default<br>
-      
-      ```
-      https://findarace.com/api/events?qty=20
-      ```
+      `https://findarace.com/api/events?qty=20`
     </td>
   </tr>
   <tr>
