@@ -4,6 +4,10 @@
 
 Our beta event API allows you to access a json feed of our event data.
 
+## Access
+
+Our api is currently in private beta, to request access please do get in touch at [hello@findarace.com](mailto:hello@findarace.com).
+
 ## Events
 
 Request all events:
@@ -47,7 +51,7 @@ This endpoint accepts the following parameters (GET or POST):
     <td><code>50</code></td>
     <td>
       Quantity to return on each page, results are paginated by default<br>
-      <pre>https://findarace.com/api/events?qty=20</pre>
+      <code>https://findarace.com/api/events?qty=20</code>
     </td>
   </tr>
   <tr>
@@ -56,7 +60,7 @@ This endpoint accepts the following parameters (GET or POST):
     <td>today</td>
     <td>
       Date to start returning results from<br>
-      <pre>https://findarace.com/api/events?formDate=2018-01-01</pre>
+      <code>https://findarace.com/api/events?formDate=2018-01-01</code>
     </td>
   </tr>
  </tbody>
@@ -92,9 +96,9 @@ Example response
 }
 ```
 
-The json response will always return a `data` property which is an array of the matching event objects and a `meta` property which is an object with information on the reqest `pagination`.
+The json response will always return a `data` property which is an array of the matching event objects and a `meta` property which is an object with information on the request `pagination`.
 
-The following properties are available for every api request via the `meta.pagination` attribute:
+The following properties are available for every api request and the `pagination` object contains the following properties:
 
 <table class="table" width="100%">
 <thead>
@@ -135,6 +139,8 @@ The following properties are available for every api request via the `meta.pagin
 
 ## Event Object
 
+An individual event is will have the following properties:
+
 <table class="table" width="100%">
 <thead>
   <tr>
@@ -158,8 +164,8 @@ The following properties are available for every api request via the `meta.pagin
     <td><code>date</code></td>
     <td>String</td>
     <td>
-       Event date (ISO 8601)</br>
-      <pre>2019-06-22T00:00:00+01:00</pre>
+       Event date</br>
+      <code>ISO 8601</code>
     </td>
   </tr>
   <tr>
@@ -175,41 +181,12 @@ The following properties are available for every api request via the `meta.pagin
   <tr>
     <td><code>links</code></td>
     <td>Object</td>
-    <td>
-      Website and registration urls
-      <pre>
-      {
-        "website": "https://findarace.com",
-        "regestration": "https://findarace.com/register"
-      }
-      </pre>
-    </td>
+    <td>Website and registration urls</td>
   </tr>
   <tr>
     <td><code>location</code></td>
     <td>Object</td>
-    <td>
-      Location information
-      <pre>
-      {
-        "text": "Winchester UK",
-        "latitude": "54.55666",
-        "longitude": "-1.6556556",
-        "address": "100 High Street, Winchester, Hampshire SO23 9AH",
-        "tags": [
-          "100",
-          "High Street",
-          "Winchester",
-          "Hampshire",
-          "SO23 9AH",
-          "England",
-          "United Kingdom",
-          "GB",
-          "SO23"
-        ]
-      }
-      </pre>
-    </td>  
+    <td>Location information</td>  
   </tr>
   <tr>
     <td><code>distances</code></td>
@@ -239,15 +216,7 @@ The following properties are available for every api request via the `meta.pagin
   <tr>
     <td><code>organiser</code></td>
     <td>Object / Boolean</td>
-    <td>
-      Event orgainser info or false
-      <pre>
-      {
-        "name": "Organiser Name",
-        "url": "https://findarace.com/organiser"
-      }
-      </pre>
-    </td>
+    <td>Event orgainser info or false if not an organiser</td>
   </tr>
   <tr>
     <td><code>tags</code></td>
@@ -257,7 +226,7 @@ The following properties are available for every api request via the `meta.pagin
  </tbody>
 </table>
 
-## Full example response
+Example json response:
 
 ``` javascript
 {
@@ -305,10 +274,10 @@ The following properties are available for every api request via the `meta.pagin
         "6-to-10-miles",
         "obstacle"
       ],
-      "overview": "Join us in Worthing, West Sussex, for a 10k obstacle course packed out with 25+ world-class obstacles including sea entry (weather dependant. Join thousands of participants and help each other to finish the course. Finisher's medal, tech T shirt. Find out more online!",
+      "overview": "The full event description is here",
       "organiser": {
-        "name": "Gladiator Races",
-        "url": "https://findarace.com/https-gladiator-races-com-"
+        "name": "Find a Races",
+        "url": "https://findarace.com/far"
       },
       "tags": []
     }
