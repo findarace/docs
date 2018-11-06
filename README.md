@@ -147,8 +147,8 @@ An individual event is will have the following properties:
 <thead>
   <tr>
     <th width="20%">Property</th>
-    <th width="15%">Type</th>
-    <th width="65%">Description</th>
+    <th width="20%">Type</th>
+    <th width="60%">Description</th>
   </tr>
 </thead>
 <tbody>
@@ -166,8 +166,7 @@ An individual event is will have the following properties:
     <td><code>date</code></td>
     <td>String</td>
     <td>
-       Event date</br>
-      <code>ISO 8601</code>
+       Event date <code>ISO 8601</code>
     </td>
   </tr>
   <tr>
