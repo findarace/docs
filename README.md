@@ -2,7 +2,7 @@
 
 # Event API (Beta)
 
-Our Event API allows you to access a json feed of our event data.
+Our Event API allows you to access a JSON feed of our event data.
 
 ## API Access
 
@@ -98,7 +98,7 @@ Example response:
 }
 ```
 
-The json response will always return a `data` property which is an array of the matching event objects and a `meta` property which is an object with information on the request `pagination`.
+The JSON response will always return a `data` property which is an array of the matching event objects and a `meta` property which is an object with information on the request `pagination`.
 
 The following properties are available for every API request and the `pagination` object contains the following properties:
 
@@ -227,7 +227,7 @@ An individual event is will have the following properties:
  </tbody>
 </table>
 
-Example json response:
+Example JSON response:
 
 ``` javascript
 {
