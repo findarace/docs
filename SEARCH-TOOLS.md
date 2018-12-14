@@ -103,4 +103,14 @@ This endpoint accepts the following parameters (GET or POST):
  </tbody>
 </table>
 
+
+## Sports Categories
+
+
+
+## Event Categories
+
+`5km`, `10km`, `half-marathon`, `marathon`, `ultra`, enduro, super-sprint, sprint, olympic, half-ironman-70.3, ironman, pool, sea, lake, river,
+mountain-bike, sportive, audax-reliability-ride, time-trial, cyclocross, road, trail, fell-running, mountain-marathon, obstacle, extreme, mountain
+
 Brought to you by [findarace.com](https://findarace.com) | &copy; Find a Race
