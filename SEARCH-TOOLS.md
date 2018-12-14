@@ -1,29 +1,11 @@
 <p align="left"><a href="https://findarace.com" target="_blank"><img width="100" height="100" src="https://avatars1.githubusercontent.com/u/44780079?s=200&amp;v=4" alt="Linkit"></a></p>
 
-# Event API (Beta)
+# Search Tools
 
 Using our Search Tools we have made it easy to direct your users to a custom set of results on findarace.com.
 
-## API Access
 
-Our events page now accepts a load of query params to refine the search results, I’ve also run this by our SEO chap to determine if he requires any additional tracking parameters be included.
-
-View all live events:
-```
-https://findarace.com/events
-```
-
-
-# Usage
-
-## Events
-
-Base events url:
-```
-https://findarace.com/events
-```
-
-Our events page accepts the following params (POST or GET) to refine the search results.
+## Examples
 
 ```
 https://findarace.com/api/events/running
@@ -32,15 +14,17 @@ https://findarace.com/api/events/swimming,swimrun
 
 Supply multiple types as a comma seperated list:
 ```
-https://findarace.com/api/events/road-cycling,mountain-biking,swimming
+https://findarace.com/events?sports=road-cycling,mountain-biking&
 ```
 
-Current event types include 
+## Usage
 
-Request a specific event by ID:
+Our base events url:
 ```
-https://findarace.com/api/events/9999
+https://findarace.com/events
 ```
+
+Our events page accepts the following parameters to refine the search results.
 
 This endpoint accepts the following parameters (GET or POST):
 
