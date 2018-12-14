@@ -83,7 +83,7 @@ This endpoint accepts the following parameters (GET or POST):
   <tr>
     <td><code>to</code></td>
     <td>String<br><code>YYYY-MM-DD</code></td>
-    <td>today</td>
+    <td>any</td>
     <td>
       Date to show events until
       <br><code>https://findarace.com/events?to=2019-01-01</code>
@@ -92,7 +92,7 @@ This endpoint accepts the following parameters (GET or POST):
   <tr>
     <td><code>location</code></td>
     <td>String</td>
-    <td>today</td>
+    <td>any</td>
     <td>
       Filter results by address
       <br><code>https://findarace.com/events?location=SO239AH</code>
@@ -101,7 +101,7 @@ This endpoint accepts the following parameters (GET or POST):
   <tr>
     <td><code>lat</code> <code>lng</code></td>
     <td>String<br><code>X.XXXXXXXXXX</code></td>
-    <td>today</td>
+    <td>any</td>
     <td>
       Filter results by lat/lng
       <br><code>https://findarace.com/events?lat=57.32285750&lng=-4.42438170</code>
