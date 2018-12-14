@@ -10,7 +10,7 @@ Our [Event API](https://github.com/findarace/docs/blob/master/EVENT-API.md) allo
 
 ### Search Tools
 
-Using our [Search Tools](https://github.com/findarace/docs/blob/master/SEARCH-TOOLS.md) We have made it easy to direct your users to a custom set of results on findarace.com.
+Using our [Search Tools](https://github.com/findarace/docs/blob/master/SEARCH-TOOLS.md) we have made it easy to direct your users to a custom set of results on findarace.com.
 
 #
 For support, if you have any questions or if you just want to chat please do get in touch at [hello@findarace.com](mailto:hello@findarace.com).
