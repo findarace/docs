@@ -297,3 +297,4 @@ Example JSON response:
 ```
 
 Brought to you by [findarace.com](https://findarace.com) | &copy; Find a Race
+Because doing sh*t makes you happy :)
