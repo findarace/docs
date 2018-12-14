@@ -119,10 +119,9 @@ This endpoint accepts the following parameters (GET or POST):
  </tbody>
 </table>
 
->>>
-Multiple sports, event categories and organisers can be supplied as an array or comma seprated list of strings (for readability). 
-Location can be passed as lat/lng values or an address string with an optional radius value.
->>>
+> Multiple sports, event categories and organisers can be supplied as an array or comma seprated list of strings (for readability). 
+> Location can be passed as lat/lng values or an address string with an optional radius value.
+
 
 ## Categories
 
