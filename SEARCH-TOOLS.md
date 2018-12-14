@@ -4,25 +4,29 @@
 
 Using our Search Tools we have made it easy to direct your users to a custom set of results on findarace.com.
 
-
-## Examples
-
-```
-https://findarace.com/api/events/running
-https://findarace.com/api/events/swimming,swimrun
-```
-
-Supply multiple types as a comma seperated list:
-```
-https://findarace.com/events?sports=road-cycling,mountain-biking&
-```
-
-## Usage
+## Some Examples
 
 Our base events url:
 ```
 https://findarace.com/events
 ```
+
+Display 5km & 10km runs:
+```
+https://findarace.com/events?sports=running&categories=5km,10km
+```
+
+Display 5km & 10km runs in May 2019:
+```
+https://findarace.com/events?sports=running&categories=5km,10km&from=2019-05-01&to=2019-05-31
+```
+
+Display 5km & 10km runs in May 2019 within 20 miles of the findarace.com HQ:
+```
+https://findarace.com/events?sports=running&categories=5km,10km&from=2019-05-01&to=2019-05-31&location=SO239AH&radius=20
+```
+
+## Usage
 
 Our events page accepts the following parameters to refine the search results.
 
@@ -43,8 +47,9 @@ This endpoint accepts the following parameters (GET or POST):
     <td>Array / String</td>
     <td><code>any</code></td>
     <td>
-      Filter results by sport. <a href="#">Sport Categories</a>
+      Filter results by sport
       <br><code>https://findarace.com/events?sports=running,triathlon</code>
+      <br><a href="#sports-categories">Sport Categories</a>
     </td>
   </tr>
   <tr>
@@ -52,8 +57,9 @@ This endpoint accepts the following parameters (GET or POST):
     <td>Array / String</td>
     <td><code>any</code></td>
     <td>
-      Filter results by event categories. <a href="#">Event Categories</a>
+      Filter results by event categories
       <br><code>https://findarace.com/events?categories=10km,half-marathon</code>
+      <br><a href="#event-categories">Event Categories</a>
     </td>
   </tr>
   <tr>
@@ -113,9 +119,10 @@ This endpoint accepts the following parameters (GET or POST):
  </tbody>
 </table>
 
-NOTE.
-- Multiple sports, event categories and organisers can be supplied as an array or comma seprated list of strings (for readability). 
-- Location can be passed as lat/lng values or an address string with an optional radius value.
+>>>
+Multiple sports, event categories and organisers can be supplied as an array or comma seprated list of strings (for readability). 
+Location can be passed as lat/lng values or an address string with an optional radius value.
+>>>
 
 ## Categories
 
