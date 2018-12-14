@@ -2,8 +2,7 @@
 
 # Event API (Beta)
 
-Our Event API allows you to access a JSON feed of our event data.
-
+Using our Search Tools we have made it easy to direct your users to a custom set of results on findarace.com.
 ## API Access
 
 Our API is currently in private beta, to request access please do get in touch at [hello@findarace.com](mailto:hello@findarace.com).
