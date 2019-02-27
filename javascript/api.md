@@ -24,7 +24,7 @@ The following needs to be placed on the thank you page after a successful conver
   far('conversion', {
     amount: 99.99,
     event: {
-      uid: 'SOMEUID',
+      uid: 'SOME-UID',
       name: 'Top Race',
       race: '10km'
     },
@@ -81,7 +81,7 @@ The event object requires the following attributes:
   <tr>
     <td><code>uid</code></td>
     <td>String</td>
-    <td>The total value of the conversion eg <code>99.99</code></td>
+    <td>A unique id / ref for your event <code>SOME-UID</code>, we recommend matching this to your site</td>
   </tr>
   <tr>
     <td><code>name</code></td>
