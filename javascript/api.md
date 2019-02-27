@@ -4,12 +4,19 @@
 
 This documention is available to help developers integrate with the findarace.com platform.
 
-## Arthur - Conversion Tracking
+## Installation
 
-Include the following script within you header tags `<head>`.
+To intialise our library include the following script within you header tags `<head>`:
 ```
 <script src="https://js.findarace.com/v1/"></script>
 ```
+
+You can enable debug mode or change the global namespace used by including the following params:
+```
+<script src="https://js.findarace.com/v1/?debug=true&namespace=global"></script>
+```
+
+## Arthur - Conversion Tracking
 
 The following needs to be placed on the thank you page after a successful conversion, or called when a conversion happens. It's important that it is only called once per conversion.
 ```
