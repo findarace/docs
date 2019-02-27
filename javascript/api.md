@@ -11,12 +11,12 @@ To intialise our library include the following script within you header tags `<h
 <script src="https://js.findarace.com/v1/"></script>
 ```
 
-You can enable debug mode or change the global namespace used by including the following params:
+You can enable debug mode or change the global namespace (far by default) used by including the following params:
 ```
-<script src="https://js.findarace.com/v1/?debug=true&namespace=global"></script>
+<script src="https://js.findarace.com/v1/?debug=true&namespace=someNewNamespace"></script>
 ```
 
-## Arthur - Conversion Tracking
+## Setting up conversion tracking (Arthur)
 
 The following needs to be placed on the thank you page after a successful conversion, or called when a conversion happens. It's important that it is only called once per conversion.
 ```
