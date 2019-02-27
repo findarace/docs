@@ -7,19 +7,19 @@ This documention is available to help developers integrate with the findarace.co
 ## Installation
 
 To intialise our library include the following script within you header tags `<head>`:
-```
+``` html
 <script src="https://js.findarace.com/v1/"></script>
 ```
 
 You can enable debug mode or change the global namespace (far by default) used by including the following params:
-```
+``` html
 <script src="https://js.findarace.com/v1/?debug=true&namespace=someNewNamespace"></script>
 ```
 
 ## Setting up conversion tracking (Arthur)
 
 The following needs to be placed on the thank you page after a successful conversion, or called when a conversion happens. It's important that it is only called once per conversion.
-```
+``` html
 <script type="text/javascript">
   far('conversion', {
     amount: 99.99,
@@ -52,7 +52,7 @@ A conversion requires the following attributes:
   <tr>
     <td><code>amount</code></td>
     <td>String</td>
-    <td>The total value of the conversion eg <code>99.99</code></td>
+    <td>The total value of the conversion <code>99.99</code></td>
   </tr>
   <tr>
     <td><code>event</code></td>
@@ -81,17 +81,17 @@ The event object requires the following attributes:
   <tr>
     <td><code>uid</code></td>
     <td>String</td>
-    <td>A unique id / ref for your event <code>SOME-UID</code>, we recommend matching this to your site</td>
+    <td>A unique id / ref for your event, we recommend matching this to your site <code>SOME-UID</code></td>
   </tr>
   <tr>
     <td><code>name</code></td>
     <td>String</td>
-    <td>The event booked eg <code>Top Race</code></td>
+    <td>The event booked <code>Top Race</code></td>
   </tr>
   <tr>
     <td><code>race</code></td>
     <td>String</td>
-    <td>The race booked eg <code>10km</code></td>
+    <td>The race booked <code>10km</code></td>
   </tr>
  </tbody>
 </table>
@@ -115,7 +115,7 @@ The participant object requires the following attributes:
   <tr>
     <td><code>email</code></td>
     <td>String</td>
-    <td>The email address for the particiapant who booked</td>
+    <td>The email address of the particiapant</td>
   </tr>
  </tbody>
 </table>
