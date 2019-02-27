@@ -15,14 +15,14 @@ The following needs to be placed on the thank you page after a successful conver
 ```
 <script type="text/javascript">
   far('conversion', {
-    amount: 99,
+    amount: 99.99,
     event: {
-      uid: '{EVENT UID}',
-      name: '{EVENT NAME}',
-      race: '{RACE NAME}'
+      uid: 'SOMEUID',
+      name: 'Top Race',
+      race: '10km'
     },
     participant: {
-      name: '{PARTICIPANT NAME}',
+      name: 'Participant Name',
       email: 'participant@email.com',
     }
   });
@@ -45,19 +45,17 @@ A conversion requires the following attributes:
   <tr>
     <td><code>amount</code></td>
     <td>String</td>
-    <td>The total value of the conversion eg <code>99.99<\code></td>
+    <td>The total value of the conversion eg <code>99.99</code></td>
   </tr>
   <tr>
     <td><code>event</code></td>
     <td>Object</td>
-    <td>The event booked</td>
+    <td>The event details, see the event object below</td>
   </tr>
   <tr>
     <td><code>participant</code></td>
     <td>Object</td>
-    <td>
-       The participant booking the race
-    </td>
+    <td>The participant details, see the particpant object below</td>
   </tr>
  </tbody>
 </table>
@@ -76,17 +74,17 @@ The event object requires the following attributes:
   <tr>
     <td><code>uid</code></td>
     <td>String</td>
-    <td>The total value of the conversion eg <code>99.99<\code></td>
+    <td>The total value of the conversion eg <code>99.99</code></td>
   </tr>
   <tr>
     <td><code>name</code></td>
     <td>String</td>
-    <td>The event booked eg <code>Top Race<\code></td>
+    <td>The event booked eg <code>Top Race</code></td>
   </tr>
   <tr>
     <td><code>race</code></td>
     <td>String</td>
-    <td>The race booked eg <code>10km<\code></td>
+    <td>The race booked eg <code>10km</code></td>
   </tr>
  </tbody>
 </table>
@@ -105,7 +103,7 @@ The participant object requires the following attributes:
   <tr>
     <td><code>name</code></td>
     <td>String</td>
-    <td>The participant name</td>
+    <td>The full name of the participant</td>
   </tr>
   <tr>
     <td><code>email</code></td>
@@ -114,7 +112,6 @@ The participant object requires the following attributes:
   </tr>
  </tbody>
 </table>
-
 
 
 #
