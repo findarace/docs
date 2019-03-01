@@ -16,7 +16,7 @@ You can enable debug mode or change the global namespace (far by default) used b
 <script src="https://js.findarace.com/v1/?debug=true&namespace=someNewNamespace"></script>
 ```
 
-## Setting up conversion tracking (Arthur)
+## Setting up conversion tracking
 
 The following needs to be placed on the thank you page after a successful conversion, or called when a conversion happens. It's important that it is only called once per conversion.
 ``` html
@@ -122,7 +122,7 @@ The participant object requires the following attributes:
 
 
 #
-For support, if you have any questions or if you just want to chat please do get in touch at [hello@findarace.com](mailto:hello@findarace.com).
+For support, if you have any questions or if you just want to chat please do get in touch at [support@findarace.com](mailto:support@findarace.com).
 
 Brought to you by [findarace.com](https://findarace.com) | &copy; Find a Race
 Because doing sh*t makes you happy :)
