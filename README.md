@@ -14,7 +14,7 @@ Using our [Search Tools](https://github.com/findarace/docs/blob/master/event/sea
 
 ### Javascript API
 
-Using our [Javascript API](https://github.com/findarace/docs/blob/master/javascript/api.md) it's easy to setup widgets, use arthur (our tracking library) and other cool stuff on your own site.
+Using our [Javascript API](https://github.com/findarace/docs/blob/master/javascript/api.md) it's easy to setup widgets, use our tracking library and other cool stuff on your own site.
 
 #
 For support, if you have any questions or if you just want to chat please do get in touch at [support@findarace.com](mailto:support@findarace.com).
