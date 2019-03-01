@@ -17,7 +17,7 @@ Using our [Search Tools](https://github.com/findarace/docs/blob/master/event/sea
 Using our [Javascript API](https://github.com/findarace/docs/blob/master/javascript/api.md) it's easy to setup widgets, use arthur (our tracking library) and other cool stuff on your own site.
 
 #
-For support, if you have any questions or if you just want to chat please do get in touch at [hello@findarace.com](mailto:hello@findarace.com).
+For support, if you have any questions or if you just want to chat please do get in touch at [support@findarace.com](mailto:support@findarace.com).
 
 Brought to you by [findarace.com](https://findarace.com) | &copy; Find a Race
 Because doing sh*t makes you happy :)
