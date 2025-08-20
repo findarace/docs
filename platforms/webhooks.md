@@ -1,18 +1,108 @@
 # 🔐 Platform Webhook Guide
 
-Our webhook system lets your platform notify **findarace.com** about important events. This document explains where to send requests, the supported event types, how to sign payloads, and how to extend the integration if needed.
+Our platform webhooks lets you notify **findarace.com** about important events. This document explains how/ where to send requests, what to expect in the response, the supported event types, how to sign payloads, and how to extend the integration if needed.
 
 ---
 
 ## 📡 Endpoint
 
-Send all webhook requests to:
+All webhook requests must be sent as an **HTTP POST** request to:
 
 ```
 https://findarace.com/hooks/platform/<partner>
 ```
 
-Where `<partner>` is your platform handle (avaiable in your dashboard).
+Where `<partner>` is your platform handle (we will provide this when setting you up).
+
+### Request requirements
+
+- **Method:** `POST`  
+- **Content-Type:** `application/json`  
+- **Body:** Raw JSON payload (UTF-8 encoded)  
+- **Headers:**  
+  - `X-Webhook-Timestamp` → Unix timestamp in seconds  
+  - `X-Webhook-Signature` → HMAC signature (see [Signing Requests](#-signing-requests))  
+
+### Body requirements
+
+- The **`type`** property is **required**.  
+- The `data` property may contain additional fields depending on the webhook type.  
+- Example minimal body:  
+
+```json
+{
+  "type": "event.updated"
+}
+```
+
+We will reject requests that are not `POST`, not JSON, missing headers, or missing the `type` property.
+
+
+## 📥 Responses
+
+Our webhook endpoint always responds with JSON.
+
+---
+
+### ✅ Successful requests
+
+- **HTTP status:** `200 OK`  
+- **Body:**
+```json
+{
+  "ok": true,
+  "message": "optional descriptive message"
+}
+```
+
+The `message` field is optional and may be included to provide additional context.
+
+---
+
+### ❌ Failed requests
+
+- **HTTP status:** appropriate error code (`400`, `403`, `404`, `500`, etc.)  
+- **Body:**
+```json
+{
+  "ok": false,
+  "error": "optional error message",
+  "errors": ["optional", "array", "of", "errors"]
+}
+```
+
+- `error` is an optional single descriptive string.  
+- `errors` is an optional array of error details when multiple issues are detected.  
+
+---
+
+### Example error responses
+
+**Invalid signature:**
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+```
+```json
+{
+  "ok": false,
+  "error": "Invalid signature"
+}
+```
+
+**Missing required field:**
+```http
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+```
+```json
+{
+  "ok": false,
+  "error": "Missing required property: type",
+  "errors": ["'type' field is required"]
+}
+```
+
 
 ---
 
