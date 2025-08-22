@@ -18,6 +18,7 @@ Currently, the following events are available:
   Triggered for each particpant when an order is placed. Contains only participant information.
 
 > 🗒️ A line item always represents a single event, line items for team races will contain multiple participants where applicable.
+
 > ⚡️ More event types (e.g. cancellations, transfers, refunds) will be added in the future.
 
 ---
