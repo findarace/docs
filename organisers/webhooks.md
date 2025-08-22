@@ -2,8 +2,6 @@
 
 Our platform exposes **webhooks** that registration platforms can subscribe to for real-time updates. This lets you process participants, orders, and line items as they happen and keep your system in sync.
 
----
-
 ## Available events
 
 Currently, the following events are available:
@@ -21,45 +19,39 @@ Currently, the following events are available:
 
 > ⚡️ More event types (e.g. cancellations, transfers, refunds) will be added in the future.
 
----
-
 ## Setup, delivery & security
 
-We use **Svix** to handle delivery, verification and retries. Svix provides signature headers for verification and management/reporting tools.
+We use **Svix** to handle delivery, verification and retries. Svix provides signature headers for verification and management/reporting tools. Setup is managed entirely through the organiser dashboard.
 
-Setup is managed entirely through the organiser dashboard.
-
-### 1. Log in
+#### 1. Log in
 Log into your organiser account at [findarace.com](https://findarace.com).  
 From the top-right menu, select your organiser profile.
 
-### 2. Go to Settings
+#### 2. Go to Settings
 In the sidebar, click **Settings**.  
 Scroll down to the **Webhooks** section and click **Manage**.
 
-### 3. Enable webhooks
+#### 3. Enable webhooks
 If webhooks are disabled, click **Enable** to switch them on.
 
-### 4. Create a webhook
+#### 4. Create a webhook
 Click **Create your first webhook**.  
 This opens the Svix dashboard (our webhook provider).
 
-### 5. Add an endpoint
+#### 5. Add an endpoint
 In the Svix dashboard:
 - Click **Add Endpoint**  
 - Enter the URL of your endpoint (where you want events delivered)  
 - Save
 
-### 6. Subscribe to events
+#### 6. Subscribe to events
 From the **Event Catalog** in Svix, choose the events you want to receive:  
 - `order.received`  
 - `lineitem.received`  
 - `participant.created`  
 
-### 7. Done
+#### 7. Done
 Your endpoint will now begin receiving webhooks for the selected events.
-
----
 
 ## Event payloads
 
@@ -147,8 +139,6 @@ Your endpoint will now begin receiving webhooks for the selected events.
 }
 ```
 
----
-
 ### `lineitem.received`
 
 ```json
@@ -220,8 +210,6 @@ Your endpoint will now begin receiving webhooks for the selected events.
 }
 ```
 
----
-
 ### `participant.created`
 
 ```json
@@ -256,9 +244,5 @@ Your endpoint will now begin receiving webhooks for the selected events.
 }
 ```
 
----
-
 Brought to you by [findarace.com](https://findarace.com) | &copy; Find a Race
-Because doing sh*t makes you happy :) 
-- Refunds  
-
+Because doing sh*t makes you happy :)
