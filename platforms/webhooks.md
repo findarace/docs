@@ -136,6 +136,7 @@ Triggered when an event has been authorised by an organiser.
   "type": "event.authorized",
   "data": {
     "id": 123,
+    "name": "Some Event",
     "organiser": {
       "id": 456,
       "name": "Some RD",
