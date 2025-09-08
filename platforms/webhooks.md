@@ -112,7 +112,7 @@ Currently we support the following webhook event types for all platforms.
 
 ### `event.updated`
 
-Triggered when an event is updated.
+Trigger when an existing (already authorised) event is updated.
 
 **Payload:**
 ```json
@@ -128,7 +128,7 @@ Triggered when an event is updated.
 
 ### `event.authorized`
 
-Triggered when an event has been authorised by an organiser.
+Trigger when an event has been created / authorised by an organiser.
 
 **Payload:**
 ```json
@@ -144,6 +144,26 @@ Triggered when an event has been authorised by an organiser.
       "email": "some@rd.com",
       "phone": "01234 456789"
     }
+  }
+}
+```
+
+---
+
+### `organiser.authorized`
+
+Trigger when an organiser is authorised.
+
+**Payload:**
+```json
+{
+  "type": "organiser.authorized",
+  "data": {
+    "id": 456,
+    "name": "Some RD",
+    "contact": "Contact Name",
+    "email": "some@rd.com",
+    "phone": "01234 456789"
   }
 }
 ```
