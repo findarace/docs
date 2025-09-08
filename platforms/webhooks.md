@@ -140,6 +140,7 @@ Triggered when an event has been authorised by an organiser.
     "organiser": {
       "id": 456,
       "name": "Some RD",
+      "contact": "Contact Name",
       "email": "some@rd.com",
       "phone": "01234 456789"
     }
