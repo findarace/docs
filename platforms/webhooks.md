@@ -141,6 +141,7 @@ Trigger when an event has been created / authorised by an organiser.
       "id": 456,
       "name": "Some RD",
       "contact": "Contact Name",
+      "website": "https://organiser.com",
       "email": "some@rd.com",
       "phone": "01234 456789"
     }
