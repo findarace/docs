@@ -151,6 +151,22 @@ Trigger when an event has been created / authorised by an organiser.
 
 ---
 
+### `event.deauthorized`
+
+Trigger when an event has been deauthorised by an organiser.
+
+**Payload:**
+```json
+{
+  "type": "event.deauthorized",
+  "data": {
+    "id": 123456
+  }
+}
+```
+
+---
+
 ### `organiser.authorized`
 
 Trigger when an organiser is authorised.
